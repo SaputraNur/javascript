@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <h1>infinete learning</h1>
+    <!--script src="main.js"></script-->
+    
+    <script>
+        // Contoh penggunaan if, else, dan nested if
+        let nilai = 75;
+        if (nilai >= 90) {
+            document.write("Nilai Anda A");
+        } else if (nilai >= 80) {
+            document.write("Nilai Anda B");
+        } else if (nilai >= 70) {
+            document.write("Nilai Anda C");
+        } else {
+            document.write("Nilai Anda D");
+        }
+        
+        // Contoh penggunaan switch case
+        let hari = "Monday";
+        let hariIndonesia;
+        switch (hari) {
+            case "Monday":
+                hariIndonesia = "Senin";
+                break;
+            case "Tuesday":
+                hariIndonesia = "Selasa";
+                break;
+            case "Wednesday":
+                hariIndonesia = "Rabu";
+                break;
+            case "Thursday":
+                hariIndonesia = "Kamis";
+                break;
+            case "Friday":
+                hariIndonesia = "Jumat";
+                break;
+            case "Saturday":
+                hariIndonesia = "Sabtu";
+                break;
+            case "Sunday":
+                hariIndonesia = "Minggu";
+                break;
+            default:
+                hariIndonesia = "Hari tidak valid";
+        }
+        document.write("<br>Hari dalam bahasa Indonesia: " + hariIndonesia);
+        
+        // Contoh penggunaan for statement
+        document.write("<br><br>Perulangan menggunakan for:<br>");
+        for (let i = 1; i <= 5; i++) {
+            document.write("Iterasi ke-" + i + "<br>");
+        }
+        
+        // Contoh penggunaan while
+        document.write("<br>Perulangan menggunakan while:<br>");
+        let j = 1;
+        while (j <= 5) {
+            document.write("Iterasi ke-" + j + "<br>");
+            j++;
+        }
+        
+        // Contoh penggunaan do while
+        document.write("<br>Perulangan menggunakan do while:<br>");
+        let k = 1;
+        do {
+            document.write("Iterasi ke-" + k + "<br>");
+            k++;
+        } while (k <= 5);
+        
+        // Contoh penggunaan function
+        function tambah(a, b) {
+            return a + b;
+        }
+        
+        let hasilTambah = tambah(3, 4);
+        document.write("<br>Hasil penjumlahan: " + hasilTambah);
+    </script>
+</body>
+</html>
